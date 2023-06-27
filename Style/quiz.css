@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@font-face{
+    font-family: 'rajdhani';
+    src: url(../police/Rajdhani-Medium.ttf);
+}
+
+@font-face{
+    font-family: 'Space Grotesk';
+    src: url(../police/SpaceGrotesk-Medium.otf);
+}
+
+
+:root{
+    --yellow-color: #FFFF00; 
+    --yellow-light:#F8F184;
+    --blue-color  : #19587D;
+    --white-color : #fff; 
+    --gradient-white: #eddebf67;
+    --gradiant-red: #89000978;
+    --black-color: #000; 
+    --grey-color:#C4C4C4; 
+    --gradient-blue : #19587D;    
+}
+
+
+
+.lets-play{
+    font-size: 30px;
+    font-family: 'Rajdhani Medium';
+    letter-spacing: 2px;
+    margin-top: 250px;
+    margin-left: 200px;
+    text-transform: uppercase;
+}
+
+.question{
+    position: absolute;
+    font-family: 'Space Grotesk';
+    font-size: 20px;
+}
+
+
+
+#acceuil-quizz{
+    background-image: url(../illustrations/Batgame_1.png);
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    background-color: black;
+    color:#fff;
+    font-family: 'Space Grotesk';
+    font-weight: 300;   
+}
+
+
+.up-bar{
+    border-top: #BCBBBD 4px solid;
+    position: relative;
+    top: 132px;
+    left: 300px;
+    width: 87%;
+    left: 102px;
+    opacity: 15%;
+}
+
+.right-bar{
+    background-color: #BCBBBD;
+    height: 2350px;
+    width: 4px;
+    position: absolute;
+    top: -1px;
+    left: 100px;
+    opacity: 15%;
+}
+
+.left-bar{
+    background-color: #BCBBBD;
+    height: 2350px;
+    width: 4px;
+    position: absolute;
+    top: -1px;
+    left: 1665px;
+    opacity: 15%;
+}
+
+
+.destination-scroll{
+    opacity: 0;
+    position: relative;
+    top: 420px;
+}
+
+nav ul li{
+    font-weight : bold;
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+ul{
+
+    list-style-type: none;
+}
+
+.home{
+    text-decoration: none;
+}
+
+.home:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.games{
+    text-decoration: none;
+}
+
+.games:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav ul a{
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'rajdhani';
+}
+
+nav ul a:hover{
+    color: var(--yellow-color);
+}
+
+.logos{
+    padding-right: 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 46px;
+    top: 250px;
+}
+
+.logos .social{
+    margin-top: 0px;
+}
+
+
+.contenu-quizz{
+	height: 435px;
+	position: absolute;
+	left: 800px;
+	top: 1150px;
+	transform: translateX(-50%) translateY(-50%);
+	
+}
+
+.titre{
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+
+}
+.questions{
+    word-spacing: 1;
+	font-family: 'Rajdhani Medium';
+    position: relative;
+	font-size: 20px;
+	width: 850px;
+	left: 135px;
+	top: -270px;
+	color: #f6f6f6;
+}
+.option{
+	border: none;
+    position: relative;
+	width: 470px;
+	display: flex;
+	padding: 10px 0 10px 15px;
+	vertical-align: middle;
+	background: rgb(100, 101, 101);
+	margin: 10px 0 10px 10px;
+    top: -260px;
+    left: 130px;
+	color: #fffdfd;
+	font-family: 'Space Grotesk';
+}
+
+.next-btn{
+    position: relative;
+    font-size: 20px;
+    font-family: 'Rajdhani Medium';
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: linear-gradient(80deg, rgb(63, 63, 63), rgb(202, 123, 45));
+    left: 137px;
+    top: -170px;
+}
+
+.result{
+	position: absolute;
+	height: 200px;
+	width: 900px;
+	margin-top: 680px;
+	margin-left: 230px;
+	text-align: center;
+	font-size: 65px;
+	font-family: 'Rajdhani Medium';
+	color: rgb(255, 255, 255);
+	background: linear-gradient(80deg, rgb(63, 63, 63), rgb(202, 123, 45));
+	border: 5px white solid;
+}
+
+input[type='radio']{
+ margin-right: 5px;
+ width: 5%;
+}
+
+
+div#photos-quizz {
+    height: 310px;
+    width: 310px;
+    margin-left:-600px ;
+    }
+  
+ ul#images-quizz {
+    list-style-type: none;
+    margin-bottom: 100px;
+  }
+  
+  
+ #num-page{
+      position: absolute;
+      font-family: 'Rajdhani Medium';
+      font-size: 30px;
+      margin-left: -100px;
+      color: #fff ;
+      
+      
+}
+  
+  .quizz-bat{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -450px;
+  }
+
+  .social{
+    margin-bottom: 15px;
+  }
+
+.logo-foot{
+    width: 42px;
+    height: 45px;
+}
+
+footer .container{
+    margin-top: 1200px;
+}
+footer{
+    margin-top: 162px;
+}
+
+footer .text-footer{
+    text-align: center;
+    font-size: 12px;
+
+}
+
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+
+footer .social-item{
+    padding: 15px;
+}
